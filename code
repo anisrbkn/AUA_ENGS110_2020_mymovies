@@ -47,8 +47,12 @@ data = json.loads(movie_info)
 print(data)
 
 genre = input('select a genre:')
+release_year = input('select release_year')
 for movies in data['movies']:
   if(movies["genre"] == (genre)):
      print(movies['movie_name'])
+for movies in data['movies']:
+  if(movies["release_year"] == (release_year)):
+         print(movies['movie_name'])
 
 
