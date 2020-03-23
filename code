@@ -9,35 +9,35 @@ movie_info = '''
    {
       "movie_name": "Joker",
       "release_year": 2019,
-      "genre": "drama, thriller",
+      "genre": "drama",
       "rating": 8.5,
       "actor": "Robert De Niro"
    },
    {
       "movie_name": "Knives Out",
       "release_year": 2019  ,
-      "genre": "comedy, detective",
+      "genre": "comedy", 
       "rating": 8,
       "actor": "Ana de Armas, Chris Evans"
    },
    {
       "movie_name": "Wonder",
       "release_year": 2017  ,
-      "genre": "family, comedy",
+      "genre": "family", 
       "rating": 8,
       "actor": "Julia Roberts, Jacob Tremblay"
    },
    {
       "movie_name": "Lo imposible",
       "release_year": 2012,
-      "genre": "disaster, drama",
+      "genre": "disaster", 
       "rating": 7.6,
       "actor": "Naomi Watts"
    },
    {
       "movie_name": "Room",
       "release_year": 2015,
-      "genre": "thriller, drama",
+      "genre": "thriller",
       "rating": 8.1,
       "actor": "Brie Larson"
    }
@@ -47,6 +47,8 @@ data = json.loads(movie_info)
 print(data)
 
 genre = input('select a genre:')
+if('movies'["genre"] == (genre)):
+ for genre in data['movies']:
+   print(genre['movie_name'])
 
-for genre in data['movies']:
-  print(genre[''])
+
