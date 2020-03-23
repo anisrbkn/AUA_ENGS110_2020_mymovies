@@ -48,22 +48,5 @@ print(data)
 
 genre = input('select a genre:')
 
-
-if genre == "thriller" :
-   print("Joker", "Room")
-elif genre == "comedy" :
-   print("Knives Out", "Wonder")
-if genre == "detective" : 
-   print("Knives Out,")
-elif genre == "drama" :
-   print("Room", "Lo imposible")
-
-release_year = input('select release year:')
-
-
-
-
-
-
-
-
+for genre in data['movies']:
+  print(genre['comedy'])
