@@ -49,4 +49,4 @@ print(data)
 genre = input('select a genre:')
 
 for genre in data['movies']:
-  print(genre['comedy'])
+  print(genre[''])
