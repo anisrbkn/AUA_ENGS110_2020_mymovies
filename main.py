@@ -2,7 +2,7 @@ user = input('please log in:')
 print("Welcome")
 
 import json
-with open("movie_info.json") as f:
+with open("movies_info.json") as f:
     data = json.load(f)
 for movie_info in data ['movies']:
     print(movie_info)
